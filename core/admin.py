@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import MateriaPrima
+from core.models import Customer, Order, Funcionario, MateriaPrima
 
-# Register your models here.
-
+admin.site.register(Funcionario)
+admin.site.register(Customer)
+admin.site.register(Order)
 admin.site.register(MateriaPrima)
