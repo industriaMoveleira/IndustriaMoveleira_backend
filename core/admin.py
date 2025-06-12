@@ -5,3 +5,4 @@ admin.site.register(Funcionario)
 admin.site.register(Customer)
 admin.site.register(Order)
 admin.site.register(MateriaPrima)
+
