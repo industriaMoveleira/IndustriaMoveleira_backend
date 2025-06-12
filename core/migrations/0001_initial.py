@@ -13,6 +13,14 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+            name='materiaPrima',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('tipo_da_materia', models.CharField(max_length=120)),
+                # outros campos que tiver nesse model...
+            ],
+        ),
+        migrations.CreateModel(
             name='Customer',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
