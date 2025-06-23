@@ -1,11 +1,12 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from core.views import CustomerViewSet, ProductViewSet
+from core.views import CustomerViewSet, ProductViewSet, FuncionarioViewSet
 
 router = DefaultRouter()
 router.register(r'customers', CustomerViewSet)
 router.register(r'products', ProductViewSet)
+router.register(r'employee', FuncionarioViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
