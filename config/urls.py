@@ -1,13 +1,13 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from core.views import CustomerViewSet, ProductViewSet, FuncionarioViewSet, MateriaPrimaViewSet
-
+from core.views import CustomerViewSet, ProductViewSet, FuncionarioViewSet, MateriaPrimaViewSet, StockViewSet
 router = DefaultRouter()
 router.register(r'customers', CustomerViewSet)
 router.register(r'products', ProductViewSet)
 router.register(r'employees', FuncionarioViewSet)
 router.register(r'rawMaterials', MateriaPrimaViewSet)
+router.register(r'stocks', StockViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
