@@ -3,3 +3,4 @@ from .product import ProductSerializer
 from .employee import FuncionarioSerializer
 from .rawMaterial import MateriaPrimaSerializer
 from .stock import StockSerializer
+from .order import OrderSerializer
