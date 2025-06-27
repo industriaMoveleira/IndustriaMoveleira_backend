@@ -10,6 +10,7 @@ router.register(r'rawMaterials', MateriaPrimaViewSet)
 router.register(r'stocks', StockViewSet)
 router.register(r'orders', OrderViewSet)
 router.register(r'orderedItems', OrderedItemViewSet)
+router.register(r'productionorders', ProductionOrdersViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
